@@ -11,3 +11,12 @@ def home(request):
       'users': _GetUsers()} 
   return render_to_response(
       'index.html', context)
+  
+def user_edit(request):
+  """The edit_user view."""
+  context = {
+      'users': _GetUsers()}      # need to fetch just desired user
+  return render_to_response(
+      'user_edit.html', context)
+  
+  

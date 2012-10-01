@@ -6,7 +6,8 @@
     <div>Users:</div>
     <ul>
     {% for user in users %}
-      <li>{{ user }}</li>
+      <li>{{ user }}
+        <a href='user_edit.html'>edit {{ user.id }}</a></li>
     {% endfor %}
     </ul>
   </body>
