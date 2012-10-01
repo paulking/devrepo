@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <h1>Hi - Paul's django testproj2 app!</h1>
+    <div>{{variable}}</div> 
+    <p>
+    <div>Users:</div>
+    <ul>
+    {% for user in users %}
+      <li>{{ user }}</li>
+    {% endfor %}
+    </ul>
+  </body>
+</html>
